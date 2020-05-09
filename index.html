@@ -1,0 +1,634 @@
+<html>
+<head>
+	<title>12A</title>
+</head>
+<style type="text/css">
+	body{
+		text-align: center;
+	}
+	.content{
+		position:relative;
+		display:grid;
+		grid-template-columns: repeat(15,1fr);
+		grid-template-rows: repeat(10,minmax(150px,auto));
+		max-width: 100%;
+		margin:0px;
+	}
+	.header{
+		grid-column: 1/16;
+		grid-row:1/3;
+		position:relative;
+		display:grid;
+		background-size:cover;
+		background-image:url(12A.jpg);
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(5,100px);
+	}
+	#Beltei{
+		position:relative;
+		color:red;
+		font-size :38px;
+		grid-column: 1/4;
+		grid-row: 2/3;
+	}
+	#Year{
+		color:red;
+		font-size:25px;
+		grid-column: 2/3;
+		grid-row: 4/5;
+	}
+
+
+	/*Student*//*Student*//*Student*//*Student*//*Student*//*Student*/
+	.student{
+		grid-column: 6/16;
+		grid-row: 3/11;
+		display: grid;
+		grid-template-columns: repeat(10,1fr);
+		grid-template-rows: repeat(8,1fr);
+		grid-gap: 18px;
+		border-color: black;
+		border:1px solid;
+	}
+	#student{
+		grid-column: 1/11;
+		grid-row:1/2;
+		color:rgb(0,0,0);
+		background-color:rgb(0,0,0);
+		font-size: 25px;
+		border-bottom:1px solid;
+		border-color: rgb(0,0,0);
+		background:rgb(255,255,255);
+	}
+
+	#Panha_Ly{
+		grid-column: 2/4;
+		grid-row:2/3;
+		border: 2px solid;
+		background-image:url(panha.jpg);
+		background-size: cover;
+	}
+	#Panha_Ly p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Panha_Ly p a{
+		color:red;
+		text-decoration: none;
+	}
+
+
+	#Roth{
+		grid-column: 5/7;
+		grid-row:2/3;
+		border: 2px solid;
+		background-image:url(Roth.jpg);
+		background-size: cover;
+	}
+	#Roth p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Roth p a{
+		color:red;
+		text-decoration: none;
+	}
+
+
+	#Ly_Na_Rith{
+		grid-column: 8/10;
+		grid-row:2/3;
+		border: 2px solid;
+		background-image:url(Ly_Na_Rith.jpg);
+		background-size: cover;
+	}
+	#Ly_Na_Rith p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Ly_Na_Rith p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Yin_Sreypich{
+		grid-column: 2/4;
+		grid-row:3/4;
+		border: 2px solid;
+		background-image:url(Yin_Sreypich.jpg);
+		background-size: cover;
+	}
+	#Yin_Sreypich p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Yin_Sreypich p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Bunthorn_Munireach{
+		grid-column: 5/7;
+		grid-row:3/4;
+		border: 2px solid;
+		background-image:url(Bunthorn_Munireach.jpg);
+		background-size: cover;
+	}
+	#Bunthorn_Munireach p{
+		font-size: 12px;
+		top: -22%;
+		position: relative;
+	}
+	#Bunthorn_Munireach p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Horr{
+		grid-column: 8/10;
+		grid-row:3/4;
+		border: 2px solid;
+		background-image:url(Horr.jpg);
+		background-size: cover;
+	}
+	#Horr p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Horr p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Noy_Noyy{
+		grid-column: 2/4;
+		grid-row:4/5;
+		border: 2px solid;
+		background-image:url(Noy_Noyy.jpg);
+		background-size: cover;
+	}
+	#Noy_Noyy p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Noy_Noyy p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Ephing_Phing{
+		grid-column: 5/7;
+		grid-row:4/5;
+		border: 2px solid;
+		background-image:url(Ephing_Phing.jpg);
+		background-size: cover;
+	}
+	#Ephing_Phing p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Ephing_Phing p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Hong_Bachelor{
+		grid-column: 8/10;
+		grid-row:4/5;
+		border: 2px solid;
+		background-image:url(Hong_Bachelor.jpg);
+		background-size: cover;
+	}
+	#Hong_Bachelor p{
+		font-size: 16px;
+		top: -28%;
+		position: relative;
+	}
+	#Hong_Bachelor p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Sat_Sovatey{
+		grid-column: 2/4;
+		grid-row:5/6;
+		border: 2px solid;
+		background-image:url(Sat_Sovatey.jpg);
+		background-size: cover;
+	}
+	#Sat_Sovatey p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Sat_Sovatey p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Sineth_Neak{
+		grid-column: 5/7;
+		grid-row:5/6;
+		border: 2px solid;
+		background-image:url(Sineth_Neak.jpg);
+		background-size: cover;
+	}
+	#Sineth_Neak p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Sineth_Neak p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Fong{
+		grid-column: 8/10;
+		grid-row:5/6;
+		border: 2px solid;
+		background-image:url(Fong.jpg);
+		background-size: cover;
+	}
+	#Fong p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Fong p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Nak{
+		grid-column: 2/4;
+		grid-row:6/7;
+		border: 2px solid;
+		background-image:url(Nak.jpg);
+		background-size: cover;
+	}
+	#Nak p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Nak p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Chan_Pi_Sey{
+		grid-column: 5/7;
+		grid-row:6/7;
+		border: 2px solid;
+		background-image:url(Chan_Pi_Sey.jpg);
+		background-size: cover;
+	}
+	#Chan_Pi_Sey p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Chan_Pi_Sey p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Tyty_Heng{
+		grid-column: 8/10;
+		grid-row:6/7;
+		border: 2px solid;
+		background-image:url(Tyty_Heng.jpg);
+		background-size: cover;
+	}
+	#Tyty_Heng p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Tyty_Heng p a{
+		color:red;
+		text-decoration: none;
+	}
+	
+	#NA_ZA{
+		grid-column: 2/4;
+		grid-row:7/8;
+		border: 2px solid;
+		background-image:url(NA_ZA.jpg);
+		background-size: cover;
+	}
+	#NA_ZA p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#NA_ZA p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Sotheavy_So{
+		grid-column: 5/7;
+		grid-row:7/8;
+		border: 2px solid;
+		background-image:url(Sotheavy_So.jpg);
+		background-size: cover;
+	}
+	#Sotheavy_So p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Sotheavy_So p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Chak_Potatoo{
+		grid-column: 8/10;
+		grid-row:7/8;
+		border: 2px solid;
+		background-image:url(Chak_Potatoo.jpg);
+		background-size: cover;
+	}
+	#Chak_Potatoo p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Chak_Potatoo p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Si_hour{
+		grid-column: 2/4;
+		grid-row:8/9;
+		border: 2px solid;
+		background-image:url(Si_hour.jpg);
+		background-size: cover;
+	}
+	#Si_hour p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Si_hour p a{
+		color:red;
+		text-decoration: none;
+	}
+
+	#Panha_Vuth{
+		grid-column: 5/7;
+		grid-row:8/9;
+		border: 2px solid;
+		background-image:url(Panha_Vuth.jpg);
+		background-size: cover;
+	}
+	#Panha_Vuth p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#Panha_Vuth p a{
+		color:red;
+		text-decoration: none;
+	}
+
+
+
+
+	/*teacher*//*teacher*//*teacher*//*teacher*//*teacher*//*teacher*/
+	.Lecturer{
+		grid-row:3/10;
+		grid-column: 1/6;
+		display:grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-template-rows: repeat(7,1fr);
+		background-color:rgb(0,100,255);
+		grid-gap: 18px;
+	}
+	#Lecturer{
+		color:white;
+		background-color:rgb(0,0,0);
+		font-size: 25px;
+		grid-column: 1/6;
+		grid-row: 1/2;
+	}
+
+
+	#teacher_math{
+		grid-column: 2/5;
+		grid-row:2/3;
+		border-radius: 50%;
+		border:1px solid;
+		background-image: url(Ky_Seihak.jpg);
+		background-size:cover;
+	}
+	#teacher_math p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#teacher_math p a{
+		color:white;
+	}
+
+
+	#teacher_history{
+		grid-column: 2/5;
+		grid-row:3/4;
+		border-radius: 50%;
+		border:1px solid;
+		background-image: url(Ratha_Ung.jpg);
+		background-size:cover;
+	}
+	#teacher_history p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#teacher_history p a{
+		color:white;
+	}
+
+
+	#teacher_chemistry{
+		grid-column: 2/5;
+		grid-row:4/5;
+		border-radius: 50%;
+		border:1px solid;
+		background-image: url(Sambath_Um.jpg);
+		background-size:cover;
+	}
+	#teacher_chemistry p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#teacher_chemistry p a{
+		color:white;
+	}
+
+
+	#teacher_khmer{
+		grid-column: 2/5;
+		grid-row:5/6;
+		border-radius: 50%;
+		border:1px solid;
+		background-image: url(khmer.jpg);
+		background-size:cover;
+	}
+	#teacher_khmer p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#teacher_khmer p a{
+		color:white;
+	}
+
+
+
+	#teacher_physic{
+		grid-column: 2/5;
+		grid-row:6/7;
+		border-radius: 50%;
+		border:1px solid;
+		background-image: url(Makara_Heng.jpg);
+		background-size:cover;
+	}
+	#teacher_physic p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#teacher_physic p a{
+		color:white;
+	}
+
+
+
+	#teacher_physiology{
+		grid-column: 2/5;
+		grid-row:7/8;
+		border-radius: 50%;
+		border:1px solid;
+		background-image: url(Lay_Lyna.jpg);
+		background-size:cover;
+	}
+	#teacher_physiology p{
+		font-size: 18px;
+		top: -28%;
+		position: relative;
+	}
+	#teacher_physiology p a{
+		color:white;
+	}
+</style>
+<body>
+	<div class="content">
+
+		<div class="header" id="header">
+			<p id="Beltei"><strong>Beltei 16 Internation School</strong></p>
+			<p id="Year">12ក(2019-2020)</p>
+		</div>
+
+		<div class="student">
+			<div id="student"><br><br>Students</div>
+			<div id="Panha_Ly"><p><a href="https://www.facebook.com/mrr.nha.9674">Panha Ly</a></p></div>
+			<div id="Roth"><p><a href="https://www.facebook.com/omrotano?__tn__=C-R&eid=ARD-6DJTd-OwCUt-Qx8Lh6GpNtFnZYi6Xy7O9GwUEzCeJRjdzdCu6zD_jy1hm3jMItq7mMIWnhFZplUA&hc_ref=ARTb0sVf3Z352tkkAtZo_rjhD8CkugYfKYcoeapK9C2V9A0jfJNAJaXIXOzdZRZyfJA&fref=nf&__xts__[0]=68.ARBeV-zHQMT6ea0mumoJdqBfkraVNemCcHIbgPgnWWRQIR8JVAa--YLUI_-JMqs2ekLAX_B0mSli-zUDiSXMO8-Kgvq8iD7Q5a0xlZYHP9FfubjkMzZz6-kyrB9IIhWj5E_fzfu8R1G1tczkHv26Ug9EeS9oikAHR1r9hTvDfYhIgILQOqhIs6rDhrCVFHo6SZ5mnNrzmz_tUPHZ">Roth</a></p></div>
+			<div id="Ly_Na_Rith"><p><a href="https://www.facebook.com/ly.narith.5055">Ly Na Rith</a></p></div>
+			<div id="Yin_Sreypich"><p><a href="https://www.facebook.com/yinn.sreypichh">Yin SreyPich</a></p></div>
+			<div id="Bunthorn_Munireach"><p><a href="https://www.facebook.com/bunthorn.munireach.3">Bunthorn Munireach</a></p></div>
+			<div id="Horr"><p><a href="https://www.facebook.com/goodluck.hor">Horr</a></p></div>
+			<div id="Noy_Noyy"><p><a href="https://www.facebook.com/noyy.noy.90">Noy Noyy</a></p></div>
+			<div id="Ephing_Phing"><p><a href="https://www.facebook.com/kim.sophoul">Ephing Phing</a></p></div>
+			<div id="Hong_Bachelor"><p><a href="https://www.facebook.com/profile.php?id=100007057068308">Hong Bachelor</a></p></div>
+			<div id="Sat_Sovatey"><p><a href="https://www.facebook.com/eto.sreytey.1">Sat Sovatey</a></p></div>
+			<div id="Sineth_Neak"><p><a href="https://www.facebook.com/neak.sineth">Sineth Neak</a></p></div>
+			<div id="Fong"><p><a href="https://www.facebook.com/fo.ng.7161">Fong</a></p></div>
+			<div id="Nak"><p><a href="https://www.facebook.com/ettore.kemuel.7">Nak</a></p></div>
+			<div id="Chan_Pi_Sey"><p><a href="https://www.facebook.com/profile.php?id=100013980729110">Chan Pi Sey</a></p></div>
+			<div id="Tyty_Heng"><p><a href="https://www.facebook.com/tyty.heng.50">Tyty Heng</a></p></div>
+			<div id="NA_ZA"><p><a href="https://www.facebook.com/za.zouy.77">Na Za</a></p></div>
+			<div id="Sotheavy_So"><p><a href="https://www.facebook.com/profile.php?id=100008755337827">Sotheavy So</a></p></div>
+			<div id="Chak_Potatoo"><p><a href="https://www.facebook.com/profile.php?id=100008200789351">Chak Potatoo</a></p></div>
+			<div id="Si_hour"><p><a href="https://www.facebook.com/hour.booty">Si hour</a></p></div>
+			<div id="Panha_Vuth"><p><a href="https://www.facebook.com/lay.panhavuth">Panha Vuth</a></p></div>
+		</div>
+
+		<div class="Lecturer">
+			<div id="Lecturer"><br><br>Lecturer</div>
+			<div id="teacher_math"><p><a href="">Ky Seihak</a></p></div>
+			<div id="teacher_history"><p><a href="https://www.facebook.com/ratha.ung.37">Ratha Ung</a></p></div>
+			<div id="teacher_chemistry"><p><a href="https://www.facebook.com/sambath.um.96">Sambath Um</a></p></div>
+			<div id="teacher_khmer"><p><a href="https://www.facebook.com/Vasovyphat">ផាត វ៉ាសូវិ</a></p></div>
+			<div id="teacher_physic"><p><a href="https://www.facebook.com/makara.heng.161">Makara Heng</a></p></div>
+			<div id="teacher_physiology"><p><a href="https://www.facebook.com/lay.lyna.73">Lay Lyna</a></p></div>
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	var Picture = document.getElementById("header");
+	function title(){
+		Picture.style.backgroundImage="url(title1.jpg)";
+		setTimeout(title1,3000)
+	}
+	function title1(){
+		Picture.style.backgroundImage="url(title2.jpg)";
+		setTimeout(title2,3000)
+	}
+	function title2(){
+		Picture.style.backgroundImage="url(title3.jpg)";
+		setTimeout(title3,3000)
+	}
+	function title3(){
+		Picture.style.backgroundImage="url(title4.jpg)";
+		setTimeout(title4,3000)
+	}
+	function title4(){
+		Picture.style.backgroundImage="url(title5.jpg)";
+		setTimeout(title5,3000)
+	}
+	function title5(){
+		Picture.style.backgroundImage="url(title6.jpg)";
+		setTimeout(title6,3000)
+	}
+	function title6(){
+		Picture.style.backgroundImage="url(title7.jpg)";
+		setTimeout(title7,3000)
+	}
+	function title7(){
+		Picture.style.backgroundImage="url(title8.jpg)";
+		setTimeout(title8,3000)
+	}
+	function title8(){
+		Picture.style.backgroundImage="url(title9.jpg)";
+		setTimeout(title9,3000)
+	}
+	function title9(){
+		Picture.style.backgroundImage="url(title10.jpg)";
+		setTimeout(title10,3000)
+	}
+	function title10(){
+		Picture.style.backgroundImage="url(title11.jpg)";
+		setTimeout(title11,3000)
+	}
+	function title11(){
+		Picture.style.backgroundImage="url(12A.jpg)";
+		setTimeout(title,3000)
+	}
+
+	setTimeout(title,3000)
+</script>
+</html>
